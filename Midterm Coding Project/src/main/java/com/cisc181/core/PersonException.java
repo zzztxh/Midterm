@@ -1,15 +1,16 @@
 package com.cisc181.core;
 
+import java.util.Date;
+import java.util.regex.Pattern;
+
 
 public class PersonException extends Exception {
+
 	private Person person;
-	
-	public PersonException(Person p, String Message) {
-		super(Message);
-		this.person = p;
+
+
+	public PersonException(Person person)  {
+		this.person = person;
 	}
 	
-	public Person getP() {
-		return person;
-	}
 }
